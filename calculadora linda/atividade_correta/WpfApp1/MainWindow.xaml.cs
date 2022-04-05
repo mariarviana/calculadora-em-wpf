@@ -30,9 +30,7 @@ namespace WpfApp1
             string nome, senha;
             nome = txt_Nome.Text;
             senha = passwordbox_senha.Password.ToString();
-            /*
-             * Jeito de conferir a senha do usuário
-             
+
             if (nome.Equals("Maria Eduarda") && senha.Equals("maria"))
             {
                 MessageBox.Show("Usuário existente");
@@ -41,16 +39,6 @@ namespace WpfApp1
             }
             else
             { 
-                MessageBox.Show("Usuário inválido");
-            }*/
-            if ((nome != "") && (senha != ""))
-            { 
-                MessageBox.Show("Usuário existente");
-            HomeJanela principal = new HomeJanela();
-            principal.ShowDialog();
-            }
-            else
-            {
                 MessageBox.Show("Usuário inválido");
             }
         }
@@ -66,12 +54,10 @@ namespace WpfApp1
                 txt_Nome.Text = "E-mail ou nome de usuário";
         }
 
-
-        private void Btn_Sair_Click_1(object sender, RoutedEventArgs e)
+        private void FecharCalculadora_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
-
         /*
 private void bt_Login_Click_1(object sender, RoutedEventArgs e)
 {

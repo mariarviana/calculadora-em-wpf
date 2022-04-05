@@ -20,12 +20,7 @@
         <TextBox x:Name="txt_Nome" HorizontalAlignment="Left" Margin="32,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" Height="25" Text="E-mail ou nome de usuário" GotFocus="txt_Nome_GotFocus" LostFocus="txt_Nome_LostFocus"/>
         <PasswordBox x:Name="passwordbox_senha" Width="188" Height="26" Margin="39,225,573,199"/>
         <Label Content="Senha" HorizontalAlignment="Left" Margin="99,182,0,0" VerticalAlignment="Top" Height="24" Width="60" FontFamily="Arial Black"/>
-        <Button x:Name="Btn_Sair" HorizontalAlignment="Left" Margin="682,348,0,0" VerticalAlignment="Top" Height="60" Width="64" Click="Btn_Sair_Click_1">
-            <Button.Background>
-                <ImageBrush ImageSource="/sair.png"/>
-            </Button.Background>
-        </Button>
-
+        <Button Content="Fechar" HorizontalAlignment="Left" Margin="658,348,0,0" VerticalAlignment="Top" Height="31" Width="81" Click="FecharCalculadora_Click"/>
 
     </Grid>
 

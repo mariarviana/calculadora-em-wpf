@@ -24,7 +24,7 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Btn_Adicao_Click(object sender, RoutedEventArgs e)
+        private void bt_Adicao_Click(object sender, RoutedEventArgs e)
         {
             double n1, n2, resultado;
 
@@ -32,9 +32,13 @@ namespace WpfApp1
             n2 = Convert.ToDouble(txt_N2.Text);
 
             resultado = n1 + n2;
-            MessageBox.Show($"Do resultado de {n1} + {n2} é: {resultado}");
-            txt_N1.Clear();
-            txt_N2.Clear();
+            MessageBox.Show($"Resultado de {n1} + {n2} é {resultado}");
+        }
+
+        private void bt_Usuario_Click(object sender, RoutedEventArgs e)
+        {
+            Login2 login = new Login2();
+            login.ShowDialog();
         }
 
         private void bt_Subtracao_Click(object sender, RoutedEventArgs e)
@@ -43,10 +47,20 @@ namespace WpfApp1
 
             n1 = Convert.ToDouble(txt_N1.Text);
             n2 = Convert.ToDouble(txt_N2.Text);
+
             resultado = n1 - n2;
-            MessageBox.Show($"Do resultado de {n1} - {n2} é: {resultado}");
-            txt_N1.Clear();
-            txt_N2.Clear();
+            MessageBox.Show($"Resultado de {n1} - {n2} é {resultado}");
+        }
+
+        private void bt_Multiplicacao_Click(object sender, RoutedEventArgs e)
+        {
+            double n1, n2, resultado;
+
+            n1 = Convert.ToDouble(txt_N1.Text);
+            n2 = Convert.ToDouble(txt_N2.Text);
+
+            resultado = n1 * n2;
+            MessageBox.Show($"Resultado de {n1} * {n2} é {resultado}");
         }
 
         private void bt_Divisao_Click(object sender, RoutedEventArgs e)
@@ -55,28 +69,14 @@ namespace WpfApp1
 
             n1 = Convert.ToDouble(txt_N1.Text);
             n2 = Convert.ToDouble(txt_N2.Text);
+
             resultado = n1 / n2;
-            MessageBox.Show($"Do resultado de {n1} / {n2} é: {resultado}");
-            txt_N1.Clear();
-            txt_N2.Clear();
+            MessageBox.Show($"Resultado de {n1} / {n2} é {resultado}");
         }
 
-        private void bt_Multiplicacao_Click(object sender, RoutedEventArgs e)
+        private void FecharHome_Click(object sender, RoutedEventArgs e)
         {
-
-            double n1, n2, resultado;
-
-            n1 = Convert.ToDouble(txt_N1.Text);
-            n2 = Convert.ToDouble(txt_N2.Text);
-            resultado = n1 * n2;
-            MessageBox.Show($"Do resultado de {n1} x {n2} é: {resultado}");
-            txt_N1.Clear();
-            txt_N2.Clear();
-        }
-
-        private void Btn_Sair2_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+            Close();
         }
     }
 }

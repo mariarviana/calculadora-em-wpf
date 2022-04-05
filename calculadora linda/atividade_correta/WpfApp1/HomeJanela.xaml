@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.HomeJanela"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="HomeJanela" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Image Margin="0,-29,-114,-95" Source="/𝐄𝐑𝐑𝐎𝐑_ 𝐯𝐤𝐨𝐨𝐤.png" Stretch="Fill"/>
+        <TextBox x:Name="txt_N1" HorizontalAlignment="Left" Margin="37,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_N2" HorizontalAlignment="Left" Margin="37,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="334,122,0,0" VerticalAlignment="Top"/>
+        <Label Content="Digite o primeiro número" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Background="#00000000" Foreground="White" FontFamily="Arial Black"/>
+        <Label Content="Digite o segundo número" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black"/>
+        <Button x:Name="bt_Adicao" Content="adição" HorizontalAlignment="Left" Margin="216,42,0,0" VerticalAlignment="Top" Height="25" Width="59" Click="bt_Adicao_Click"/>
+        <Button x:Name="bt_Subtracao" Content="subtração" HorizontalAlignment="Left" Margin="216,84,0,0" VerticalAlignment="Top" Height="24" Width="59" Click="bt_Subtracao_Click"/>
+        <Button x:Name="bt_Divisao" Content="divisão" HorizontalAlignment="Left" Margin="224,181,0,0" VerticalAlignment="Top" Height="24" Width="44" Click="bt_Divisao_Click"/>
+        <Button x:Name="bt_Multiplicacao" Content="multiplicação" HorizontalAlignment="Left" Margin="208,131,0,0" VerticalAlignment="Top" Height="24" Width="75" Click="bt_Multiplicacao_Click"/>
+        <Button Content="Informações de usuário" HorizontalAlignment="Left" Margin="22,326,0,0" VerticalAlignment="Top" Height="65" Width="135" Click="bt_Usuario_Click"/>
+        <Button Content="Fechar" HorizontalAlignment="Left" Margin="656,326,0,0" VerticalAlignment="Top" Height="32" Width="81" Click="FecharHome_Click"/>
+    </Grid>
+</Window>
